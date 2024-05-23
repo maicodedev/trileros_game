@@ -1,4 +1,7 @@
 /* Estilos para móvil */
+* {
+    box-sizing:  border-box;
+}  
 
 html, body {
     height: 100%;
@@ -7,7 +10,7 @@ html, body {
 }
 
 body {
-    background-image: url(../assets/images/fondo.jpg);
+    background-image: url(../assets/images/wallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,17 +18,22 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 main {
     flex:1;
 }
 
-h1 {
-    font-family: Irish Grover;
+.container {
+    max-width: 1280px;
+    margin: auto;
 }
 
-header, nav, main, footer {
+h1 {font-family: Irish Grover, Impact;}
+p, li {font-family: Josefin Sans, Arial;}
+
+header, nav, main {
     padding: 1rem;
     text-align: center;
 }
@@ -71,20 +79,8 @@ button {
     max-height: 65px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-
 footer {
-    background-color: #f05b16;
-    color: white;
-    padding: 0.5rem 0;
-}
-
-.terms {
-    list-style: none;
+    display: none;
 }
 
 /* Estilos responsivos para PC */
@@ -96,5 +92,28 @@ footer {
 
     header, nav, main, footer {
         padding: 2rem;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    footer {
+        background-color: #f05b16;
+        color: white;
+        padding: 0.5rem 0;
+        display: block;
+    }
+    
+    .terms {
+        list-style: none;
+        padding: 2 5;
+        margin: 0;
+        display: flex;
+        font-size: 0.7em;
+    }
+    .terms li {
+        margin: 0 7rem; 
     }
 }
