@@ -1,11 +1,17 @@
+/* Estilos para móvil */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+.btn-arrow {
+    display: flex;
+    flex-direction: row;
+}
 body {
-    background-image: url(../assets/images/fondo.jpg);
+    background-image: url(../assets/images/wallpaper.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,48 +27,18 @@ main {
 
 h1 {
     font-family: Irish Grover;
+    font-size: 80px;
+    display: flex;
+    
 }
 
-header, nav, main, footer {
+header, nav, main {
     padding: 1rem;
     text-align: center;
 }
 
-header {
-    color: white;
-}
 
-.button-red {
-    width: 90px;
-    height: 90px;
-    background-color: #ae0139;
-    border: 3px solid #f7e034;
-    border-radius: 30px;
-    font-family: Irish Grover;
-    margin: auto;
 
-}
-
-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: 1px  #f7e034;
-    background-color: transparent; 
-    margin: auto;
-}
-
-.image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90px;
-    height: 90px;
-    background-color: #643ea1;
-    border: 3px solid #f7e034;
-    border-radius: 30px;
-}
 
 .image-container img {
     max-width: 65px;
@@ -75,16 +51,9 @@ nav ul {
 }
 
 
-footer {
-    background-color: #f05b16;
-    color: white;
-    padding: 0.5rem 0;
-}
 
-.terms {
-    list-style: none;
-}
 
+}
 /* Estilos responsivos para PC */
 @media (min-width: 768px) {
     nav ul li {
@@ -92,7 +61,23 @@ footer {
         margin: 0 1rem;
     }
 
-    header, nav, main, footer {
+    header, nav, main {
         padding: 2rem;
+    }
+
+    h1 {
+        font-family: Irish Grover;
+        font-size: 130px;
+    }
+
+    body {
+        background-image: url(../assets/images/wallpaper.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 }
