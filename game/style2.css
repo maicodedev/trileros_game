@@ -1,42 +1,103 @@
 /* Estilos para móvil */
 @media only screen and (max-width: 767px) and (orientation: landscape) {
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.btn-arrow {
-    display: flex;
-    flex-direction: row;
-}
-.navBar {
-    flex: row !important;
-    display: flex;
-    margin: 0;
-    height: 200px;
-
-}
 body {
     background-image: url(../assets/images/wallpaper.jpg);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-position: 50% 60%;
+    background-size: 450%;
+    /*height: 100%;*/
+    margin: 0;
+    padding: 0;
+}
+/*.container-general{}*/
 }
 
-main {
-    flex:1;
+.container-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+   
+.container-cups {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container-hourglass {
+    float: right;
+    margin-bottom: 50px;
+}
+
+.container-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 90px;
+    gap: 80px
+}
+
+#imagen-button{
+    width: 40px;
+    height: 40px;
+}
+
+#imagen-play{
+    width: 40px;
+    height: 40px; 
+}
+
+#imagen-arrow {
+  width: 40px;
+  height: 20px;
+
+} 
+
+#image-ballon {
+    width: 110px;
+    height: 120px;
+}
+
+#imagen-ballon-2 {
+    width: 110px;
+    height: 120px;
+}
+
+#imagen-hourglass {
+    width: 40px;
+    height: 70px;
+}
+
+#imagen-cup-3 {
+    width: 70px;
+    height: 100px;
+}
+
+.text-overlay-1 {
+    position: absolute;
+    top: 65px;
+    left: 110px;
+    transform: translate(-50%, -50%);
+    color: white; /* Ajusta el color del texto según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.text-overlay-2 {
+    position: absolute;
+    top: 65px;
+    right: 70px;
+    transform: translate(-50%, -50%);
+    color: white; /* Ajusta el color del texto según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
 }
 
 h1 {
     font-family: Irish Grover;
     font-size: 80px;
-    display: flex;
-        
 }
 
 
@@ -46,35 +107,21 @@ h1 {
     background-clip: texto;
     -webkit-background-clip: text;
    margin: 0;
-   font-size: 140px;
 }
-header, nav, main {
-    padding: 1rem;
-    align-items: center;
-    text-align: center;
-}
-
-
-
 
 .image-container img {
     max-width: 65px;
     max-height: 65px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
 
 .balloon{
     background-image: none;
 }
 
 
-}
 /* Estilos responsivos para PC */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     nav ul li {
         display: inline-block;
         margin: 0 1rem;
@@ -98,7 +145,7 @@ nav ul {
        font-size: 140px;
     }*/
 
-    body {
+    /*body {
         background-image: url(../assets/images/wallpaper.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -129,9 +176,21 @@ nav ul {
         position: absolute;
          top: 30%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        color: white; /* Ajusta el color del texto según sea necesario */
-        font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
-        font-weight: bold; /* Ajusta el peso del texto según sea necesario */
-    }
-}
+        transform: translate(-50%, -50%);*/
+        /*color: white; /* Ajusta el color del texto según sea necesario */
+        /*font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+        /*font-weight: bold; /* Ajusta el peso del texto según sea necesario */
+
+/*
+body {
+    background-image: url(../assets/images/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}*/
+
+   /*background-position: 50% 40%; /* Ajusta la posición de la imagen de fondo */ /*background-size: 150%; /* Ajusta el tamaño de la imagen de fondo para hacer zoom * */
