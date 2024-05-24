@@ -13,12 +13,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
-    
-    /*min-height: 100vh;*/
    
-    margin: 0 auto;
+    
+    
+    height: 100vh;
+    margin: 20%;
     padding: 0;
+   
 }
 
 main {
@@ -51,13 +52,14 @@ h1 {
     -webkit-background-clip: text;
    margin: 0;
    font-size: 140px;
+   justify-content: center;
     
 }
 header, nav, main, footer {
     
     text-align: center;
     align-items: center;
-    justify-content: center;
+    
     
 }
 
@@ -171,7 +173,7 @@ footer {
     color: white;
     /*padding: 0.5rem 0;*/
     height: 50px;/* agregado*/
-    width: 100%;
+    width: 100vh;
     display: flex;
     padding: 0;
     margin: 0;
@@ -181,7 +183,7 @@ footer {
     list-style: none;
 }
 
-/* Estilos responsivos para PC */
+/* Estilos responsivos para PC 
 @media (min-width: 768px) {
     nav ul li {
         display: inline-block;
@@ -191,7 +193,7 @@ footer {
     header, nav, main, footer {
         padding: 2rem;
     }
-}
+}*/
 
 @media screen and (max-width:576px) {
     div, img {
@@ -249,4 +251,5 @@ footer {
     width: 334px;
     height: 46px;
 }
+
 }
