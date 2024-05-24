@@ -10,6 +10,13 @@ html, body {
     display: flex;
     flex-direction: row;
 }
+.navBar {
+    flex: row !important;
+    display: flex;
+    margin: 0;
+    height: 200px;
+
+}
 body {
     background-image: url(../assets/images/wallpaper.jpg);
     background-position: center;
@@ -32,6 +39,7 @@ h1 {
         
 }
 
+
 .title{
     color:transparent;
     background: linear-gradient(hsl(58, 100%, 61%) 46% , hsl(22, 100%, 50%) 70%,hsl(20, 98%, 51%) 100%, hsl(8, 89%, 58%)100%);
@@ -42,6 +50,7 @@ h1 {
 }
 header, nav, main {
     padding: 1rem;
+    align-items: center;
     text-align: center;
 }
 
@@ -80,14 +89,14 @@ nav ul {
         font-size: 130px;
     }
 
-    .title{
+    /*.title{
         color:transparent;
         background: linear-gradient(hsl(58, 100%, 61%) 46% , hsl(22, 100%, 50%) 70%,hsl(20, 98%, 51%) 100%, hsl(8, 89%, 58%)100%);
         background-clip: texto;
         -webkit-background-clip: text;
        margin: 0;
        font-size: 140px;
-    }
+    }*/
 
     body {
         background-image: url(../assets/images/wallpaper.jpg);
