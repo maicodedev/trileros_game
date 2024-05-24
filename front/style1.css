@@ -17,6 +17,10 @@ body {
     min-height: 100vh;
 }
 
+main{
+    flex: 1;
+}
+
 h1 {
     font-family: Irish Grover;
 }
@@ -29,28 +33,35 @@ header {
     color: white;
 }
 
-.button-red {
-    height: 90px;
+.button-red1 {
+    height: 40px;
+    width: 65%;
+    background-color: #ae0139;
+    border: 3px solid #f7e034;
+    border-radius: 30px;
+    font-family: Irish Grover;
+    margin-top: 35px;
+}
+
+.button-red2 {
+    height: 65px;
+    width: 35%;
     background-color: #ae0139;
     border: 3px solid #f7e034;
     border-radius: 30px;
     font-family: Irish Grover;
 }
 
-.button-container {
-    margin: 6px auto; 
-    background-color: #643ea1;
-}
 
-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border: 1px solid #f7e034; 
-    background-color: transparent; 
-    padding: 0; 
+.button-cup {
+    height: 100px;
+    width: 55%;
+    background-color: rgba(184, 22, 170, 0.5); 
+    border: 6px solid rgba(247, 224, 52, 1); 
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 55px;
 }
 
 .image-container {
@@ -59,21 +70,28 @@ button {
     justify-content: center;
     width: 90px;
     height: 90px;
-    background-color: #643ea1;
-    border: 3px solid #f7e034;
-    border-radius: 30px;
+    border-radius: 59;
+    background-color: transparent;
 }
 
-.image-container img {
-    max-width: 65px;
-    max-height: 65px;
-}
+
 
 footer {
-    display: none;
-}
+        background-color: #f05b16;
+        color: white;
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+ul {
+        list-style: none;
+        padding: 0;
+    }
 
 /* Estilos responsivos para PC */
+
 @media (min-width: 768px) {
     nav ul li {
         display: inline-block;
@@ -93,7 +111,6 @@ footer {
         background-color: #f05b16;
         color: white;
         padding: 0.5rem 0;
-        display: block;
     }
     
     .terms {
@@ -102,7 +119,8 @@ footer {
         margin: 0;
         display: flex;
     }
+
     .terms li {
-        margin: 0 5rem; 
+        margin: 0 10rem; 
     }
 }
