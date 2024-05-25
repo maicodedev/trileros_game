@@ -8,9 +8,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    
+    
+    height: 100vh;
     margin: 0 auto;
     padding: 0;
 }
@@ -38,26 +38,33 @@ h1 {
   
     
 }
+.container-ballon-P{
+   display: flex;
+    justify-content:center;
+    align-content: center;
+    margin-left: 10%;
+    padding: 10%;
+    height: 400px;
+    width: 200px;
+    margin-top: -15%;
+}
 .text-overlay-P {
-    position: absolute;
-    top: 65px;
-    left: 110px;
+    left: 90px;
     transform: translate(-50%, -50%);
     color: #f7e034;
-    font-size: 16px; 
-    font-size: bold 36px ; 
+    font-size: 36px ; 
+    margin-top: 25%;
+    margin-left: 15%;
 }
 
 #image-ballon-P {
-    width: 198px;
-    height: 300px;
+    width: 280px;
+    height: 340px;
+    margin-top: -85%;
+    margin-left: -60%;
+    
 }
-.container-head {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-}
+
 .type{
     color:transparent;
     background: linear-gradient(hsl(58, 100%, 61%) 46% , hsl(22, 100%, 50%) 70%,hsl(20, 98%, 51%) 100%, hsl(8, 89%, 58%)100%);
@@ -173,20 +180,37 @@ button {
 footer {
     background-color: #f05b16;
     color: white;
-    padding: 0.5rem 0;
-    /*padding: 0.5rem 0;*/
     height: 50px;/* agregado*/
     width: 100%;
-    display: flex;
     padding: 0;
     margin: 0;
+    
 }
+footer p{
+    color: white;
+    font-size: 16px;
+   display: flex;
+    display: inline;width: 100%;
+    padding:  auto;
+    margin-left: 15% ;
 
+    
+    align-content: space-between;
+    text-align: justify;
+}
+.terms{
+    width: 100%;
+    display: flex;
+}
 
 /* Estilos responsivos para movil */
 
 
 @media screen and (max-width:576px) {
+    body{
+        display: ;
+        flex-direction: row;
+    }
     div, img {
         width: 100%;
     }
