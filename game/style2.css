@@ -4,8 +4,8 @@ body {
     background-image: url(../assets/images/wallpaper.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-position: 50% 60% ;
-    background-size: 400%;
+    background-position: 51% 61% ;
+    background-size: 450%;
 }
 
 .image-arrow {
@@ -16,7 +16,7 @@ body {
 }
 
 .play-button {
-    padding-left: 55px;
+    padding-left: 30px;
     padding-right: 50px;
 }
 
@@ -31,10 +31,9 @@ body {
 .container-cups {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 40px;
-    padding-top: 65px;
-    padding-left: 65px;
+    padding-top: 180px;
+    padding-left: 400px;
 }
 
 .container-hourglass {
@@ -46,9 +45,9 @@ body {
 .container-down {
     display: flex;
     flex-direction: row;
-    padding-top: 110px;
-    padding-left: 120px;
-    gap: 130px;
+    padding-top: 160px;
+    padding-left: 100px;
+    gap: 150px;
 }
 
 #imagen-button{
@@ -74,13 +73,13 @@ body {
 } 
 
 #image-ballon {
-    width: 170px;
-    height: 190px;
+    width: 210px;
+    height: 230px;
 }
 
 #imagen-ballon-2 {
-    width: 170px;
-    height: 190px;
+    width: 210px;
+    height: 230px;
 }
 
 #imagen-hourglass {
@@ -110,8 +109,8 @@ Hay que crear un div y ponerle de background el icono del globo y dentro del tex
 
 .text-overlay-1 {
     position: absolute;
-    top: 95px;
-    left: 306px;
+    top: 110px;
+    left: 230px;
     transform: translate(-50%, -50%);
     color: #f7e034;
     font-size: 20px;
@@ -120,8 +119,8 @@ Hay que crear un div y ponerle de background el icono del globo y dentro del tex
 
 .text-overlay-2 {
     position: absolute;
-    top: 95px;
-    right: 392px;
+    top: 110px;
+    right: 345px;
     transform: translate(-50%, -50%);
     color: #f7e034;
     font-size: 20px;
@@ -140,7 +139,7 @@ h1 {
     background-clip: texto;
     -webkit-background-clip: text;
     margin: 0;
-    font-size: 100px;
+    font-size: 128px;
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
