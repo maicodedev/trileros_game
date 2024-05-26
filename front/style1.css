@@ -109,8 +109,8 @@ header {
 }
 
 .sound-button {
-    width: 30px; /* Ajusta este valor según el tamaño que prefieras */
-    height: 30px; /* Ajusta este valor según el tamaño que prefieras */
+    width: 30px; 
+    height: 30px; 
 }
 
 .sound-button img {
