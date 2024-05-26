@@ -23,6 +23,19 @@ main{
 
 h1 {
     font-family: Irish Grover;
+    font-size: 60px;
+    height: 100%;  
+    margin-top: 95px;
+}
+
+.title {
+    background-image: linear-gradient(45deg, #ffcc00, #ff9900); 
+    -webkit-background-clip: text; 
+    -moz-background-clip: text;
+    background-clip: text;
+    background-size: 100% 100%;  
+    background-repeat: no-repeat; 
+    -webkit-text-fill-color: transparent;
 }
 
 header, nav, main {
@@ -33,56 +46,117 @@ header {
     color: white;
 }
 
+
+.allblocks {
+    margin-top: -24px;
+}
+
+
+
+.container-ballon-1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#image-ballon {
+    width: 100px; 
+    position: relative;
+}
+
+.home-text {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px; 
+    color: white;
+    z-index: 2;
+}
+
 .button-red1 {
     height: 40px;
     width: 65%;
-    background-color: #ae0139;
+    background-color: rgba(255, 22, 170, 0.8); 
     border: 3px solid #f7e034;
     border-radius: 30px;
     font-family: Irish Grover;
-    margin-top: 35px;
+
+    justify-content: center;
+    font-size: 25px;
+    color:rgba(247, 224, 52, 1)
+}
+
+.lower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
 }
 
 .button-red2 {
     height: 65px;
-    width: 35%;
-    background-color: #ae0139;
+    width: 60%;
+    background-color: rgba(255, 22, 170, 0.8); 
     border: 3px solid #f7e034;
     border-radius: 30px;
     font-family: Irish Grover;
+    font-size: 45px;
+    color: rgba(247, 224, 52, 1);
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 65px;
+}
+
+.sound-button {
+    width: 30px; /* Ajusta este valor según el tamaño que prefieras */
+    height: 30px; /* Ajusta este valor según el tamaño que prefieras */
+}
+
+.sound-button img {
+    width: 100%;
+    height: 100%;
 }
 
 
-.button-cup {
-    height: 100px;
+button {
+    height: 130px;
     width: 55%;
-    background-color: rgba(184, 22, 170, 0.5); 
+    background-color: rgba(166, 12, 197, 0.8); 
     border: 6px solid rgba(247, 224, 52, 1); 
     border-radius: 50px;
     margin: 0 auto;
     margin-top: 25px;
-    margin-bottom: 55px;
+    margin-bottom: 25px;
+    display: flex; 
+    align-items: center; 
 }
 
 .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 90px;
-    border-radius: 59;
-    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    max-width: 30%;
+    max-height: auto;
+    object-fit: contain; 
 }
 
 
-
 footer {
-        background-color: #f05b16;
+        background-color: #f07035;
         color: white;
         position: fixed; 
         bottom: 0;
         left: 0;
         width: 100%;
+        font-family: Josefin Sans, Arial;
+        text-align: center;
+        justify-content: center;
     }
 
 ul {
