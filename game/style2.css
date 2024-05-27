@@ -1,11 +1,15 @@
 /*Aqui va todo el desktop, Dimensiones Desktop 1400 x 667 (fuera del media query va todo lo del desktop*/
-
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     background-image: url(../assets/images/wallpaper.jpg);
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: 51% 61% ;
-    background-size: 450%;
+    background-position: 50% 61% ;
+    background-size: 490%;
+    height: 100%;
 }
 
 .image-arrow {
@@ -24,8 +28,9 @@ body {
     display: flex;
     justify-content: center;
     width: 500px;
-    margin-left: 390px;
+    margin-left: 430px;
     gap: 20px;
+
 }
    
 .container-cups {
@@ -39,7 +44,7 @@ body {
 .container-hourglass {
     float: right;
     margin-top: 120px;
-    padding-right: 45px;
+    padding-right: 5px;
 }
 
 .container-down {
@@ -49,6 +54,7 @@ body {
     padding-left: 100px;
     gap: 150px;
 }
+
 
 #imagen-button{
     width: 55px;
@@ -72,10 +78,6 @@ body {
     height: 35px;
 } 
 
-#image-ballon {
-    width: 210px;
-    height: 230px;
-}
 
 #imagen-ballon-2 {
     width: 210px;
@@ -102,30 +104,64 @@ body {
     padding: 5px 20px;
     color: #f7e034;
     cursor: pointer;
-}
-/* TO DO: 
-El globo y los textos estan dando problemas por que van por separado, la mejor forma de arreglarlo es tenerlo en un mismo componente;
-Hay que crear un div y ponerle de background el icono del globo y dentro del texto del div poner las letras amarillas para que se vuelva un solo componente */
 
-.text-overlay-1 {
+}
+/*GLOBO 1*/
+.container-ballon-1 {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-ballon {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#imagen-ballon-1{
+    width: 210px;
+    height: 230px;
+}
+
+.text-overlay-1{
     position: absolute;
-    top: 110px;
-    left: 230px;
+    top: 35%; 
+    left: 50%; 
     transform: translate(-50%, -50%);
     color: #f7e034;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.text-overlay-2 {
+/*GLOBO 2*/
+.container-ballon-2 {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-ballon {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#imagen-ballon-2{
+    width: 210px;
+    height: 230px;
+}
+
+.text-overlay-2{
     position: absolute;
-    top: 110px;
-    right: 345px;
+    top: 35%;
+    left: 50%; 
     transform: translate(-50%, -50%);
     color: #f7e034;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
+
 
 h1 {
     font-family: Irish Grover;
@@ -143,12 +179,73 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
-body {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
     background-image: url(../assets/images/wallpaper.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 60% ;
     background-size: 440%;
+}
+
+/*GLOBO 1*/
+.container-ballon-1 {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-ballon {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#imagen-ballon-1{
+    width: 110px;
+    height: 120px;
+}
+
+.text-overlay-1{
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #f7e034;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*GLOBO 2*/
+.container-ballon-2 {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-ballon {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#imagen-ballon-2{
+    width: 110px;
+    height: 120px;
+}
+
+.text-overlay-2{
+    position: absolute;
+    top: 35%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #f7e034;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .image-arrow {
@@ -167,7 +264,8 @@ body {
     display: flex;
     justify-content: center;
     width: 500px;
-    margin-left: 120px;
+    margin-left: 150px;
+    height: 130px;
 }
    
 .container-cups {
@@ -216,15 +314,7 @@ body {
     height: 25px;
 } 
 
-#image-ballon {
-    width: 110px;
-    height: 120px;
-}
 
-#imagen-ballon-2 {
-    width: 110px;
-    height: 120px;
-}
 
 #imagen-hourglass {
     width: 45px;
@@ -248,25 +338,6 @@ body {
     cursor: pointer;
 }
 
-.text-overlay-1 {
-    position: absolute;
-    top: 65px;
-    left: 133px;
-    transform: translate(-50%, -50%);
-    color: #f7e034;
-    font-size: 16px;
-    font-weight: bold
-}
-
-.text-overlay-2 {
-    position: absolute;
-    top: 65px;
-    right: 103px;
-    transform: translate(-50%, -50%);
-    color: #f7e034;
-    font-size: 16px;
-    font-weight: bold;
-}
 
 h1 {
     font-family: Irish Grover;
