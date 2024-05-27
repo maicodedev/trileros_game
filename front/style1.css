@@ -71,7 +71,7 @@ header {
   z-index: 2;
 }
 
-.button-red1 {
+.red_choose {
   height: 40px;
   width: 65%;
   background-color: rgba(255, 22, 170, 0.8); 
@@ -91,7 +91,7 @@ header {
   padding: 0 10%;
 }
 
-.button-red2 {
+.red_play {
   height: 65px;
   width: 60%;
   background-color: rgba(255, 22, 170, 0.8); 
@@ -115,8 +115,7 @@ header {
   height: 100%;
 }
 
-
-button {
+.circus {
   height: 130px;
   width: 55%;
   background-color: rgba(166, 12, 197, 0.8); 
@@ -221,4 +220,7 @@ ul {
   width: auto;
 }
 
+circus {
+  display: none;
+}
 }
