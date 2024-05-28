@@ -1,0 +1,226 @@
+/* Estilos para móvil */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../assets/images/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex: 1;
+}
+
+h1 {
+  font-family: Irish Grover;
+  font-size: 60px;
+  height: 100%;  
+  margin-top: 95px;
+}
+
+.title {
+  background-image: linear-gradient(45deg, #ffcc00, #ff9900); 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text;
+  background-clip: text;
+  background-size: 100% 100%;  
+  background-repeat: no-repeat; 
+  -webkit-text-fill-color: transparent;
+}
+
+header, nav, main {
+  text-align: center;
+}
+
+header {
+  color: white;
+}
+
+.allblocks {
+  margin-top: -24px;
+}
+
+.container-ballon-1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#image-ballon {
+  width: 100px; 
+  position: relative;
+}
+
+.home-text {
+  position: absolute;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px; 
+  color: white;
+  z-index: 2;
+}
+
+.red_choose {
+  height: 40px;
+  width: 65%;
+  background-color: rgba(255, 22, 170, 0.8); 
+  border: 3px solid #f7e034;
+  border-radius: 30px;
+  font-family: Irish Grover;
+
+  justify-content: center;
+  font-size: 25px;
+  color:rgba(247, 224, 52, 1)
+}
+
+.lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.red_play {
+  height: 65px;
+  width: 60%;
+  background-color: rgba(255, 22, 170, 0.8); 
+  border: 3px solid #f7e034;
+  border-radius: 30px;
+  font-family: Irish Grover;
+  font-size: 45px;
+  color: rgba(247, 224, 52, 1);
+  justify-content: center;
+  margin-top: 2px;
+  margin-left: 65px;
+}
+
+.sound-button {
+  width: 30px; 
+  height: 30px; 
+}
+
+.sound-button img {
+  width: 100%;
+  height: 100%;
+}
+
+.circus {
+  height: 130px;
+  width: 55%;
+  background-color: rgba(166, 12, 197, 0.8); 
+  border: 6px solid rgba(247, 224, 52, 1); 
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex; 
+  align-items: center; 
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  max-width: 30%;
+  max-height: auto;
+  object-fit: contain; 
+}
+
+footer {
+      background-color: #f07035;
+      color: white;
+      position: fixed; 
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-family: Josefin Sans, Arial;
+      text-align: center;
+      justify-content: center;
+  }
+
+ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  .cups_desktop {
+    display: none;
+  }
+
+
+/* Estilos responsivos para PC */
+
+@media (min-width: 768px) {
+  nav ul li {
+      display: inline-block;
+      margin: 0 1rem;
+  }
+
+  header, nav, main, footer {
+      padding: 2rem;
+  }
+
+  nav ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  footer {
+      background-color: #f05b16;
+      color: white;
+      padding: 0.5rem 0;
+  }
+  
+  .terms {
+      list-style: none;
+      padding: 2 5;
+      margin: 0;
+      display: flex;
+  }
+
+  .terms li {
+      margin: 0 10rem; 
+  }
+
+  .cups_mobile {
+    display: none;
+  }
+  
+  .image-container {
+    display: none;
+  }
+
+  .cups_desktop {
+    display: inline;
+
+  }
+
+.rectangle {
+  height: 100vh;
+}
+
+.element {
+  height: 85px;
+  width: auto;
+}
+
+circus {
+  display: none;
+}
+}
