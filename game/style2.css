@@ -1,0 +1,356 @@
+/*Aqui va todo el desktop, Dimensiones Desktop 1400 x 667 (fuera del media query va todo lo del desktop*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../assets/images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 61% ;
+    background-size: 490%;
+    height: 100%;
+}
+
+.image-arrow {
+    width: 5%;
+    height: 10%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.play-button {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container-head {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 45%;
+    gap: 10%;
+
+}
+   
+.container-cups {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    padding-top: 8%;
+    padding-left: 32%;
+}
+
+.container-hourglass {
+    float: right;
+    margin-top: 5%;
+    padding-right: 5px;
+}
+
+.container-down {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+    padding-left: 8%;
+    gap: 10%;
+}
+
+
+#imagen-button{
+    width: 55px;
+    height: 55px;
+    padding-bottom: 30px;
+    margin-left: 280px;
+    cursor: pointer;
+}
+
+#imagen-play{
+    width: 55px;
+    height: 55px; 
+    margin-left: 262px;
+    cursor: pointer;
+}
+
+#imagen-arrow {
+    padding: 20px;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+} 
+
+
+#imagen-ballon-2 {
+    width: 20%;
+    height: 50%;
+}
+
+#imagen-hourglass {
+    width: 60px;
+    height: 80px;
+}
+
+#imagen-cup-3 {
+    width: 150px;
+    height: 200px;
+}
+
+
+#reset {
+    background-color: #ae0139;
+    border: 3px solid #f7e034;
+    border-radius: 30px;
+    font-family: Irish Grover;
+    font-size: 25px;
+    padding: 5px 20px;
+    color: #f7e034;
+    cursor: pointer;
+
+}
+/*GLOBO 1*/
+.container-ballon-1 {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-ballon {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#imagen-ballon-1{
+    width: 210px;
+    height: 230px;
+}
+
+.text-overlay-1{
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #f7e034;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*GLOBO 2*/
+.container-ballon-2 {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-ballon {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#imagen-ballon-2{
+    width: 210px;
+    height: 230px;
+}
+
+.text-overlay-2{
+    position: absolute;
+    top: 35%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #f7e034;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-family: Irish Grover;
+    font-size: 80px;
+}
+
+
+.title{
+    color:transparent;
+    background: linear-gradient(hsl(58, 100%, 61%) 46% , hsl(22, 100%, 50%) 70%,hsl(20, 98%, 51%) 100%, hsl(8, 89%, 58%)100%);
+    background-clip: texto;
+    -webkit-background-clip: text;
+    margin: 0;
+    font-size: 128px;
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+    background-image: url(../assets/images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 60% ;
+    background-size: 440%;
+}
+
+/*GLOBO 1*/
+.container-ballon-1 {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-ballon {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#imagen-ballon-1{
+    width: 110px;
+    height: 120px;
+}
+
+.text-overlay-1{
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #f7e034;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*GLOBO 2*/
+.container-ballon-2 {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-ballon {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+#imagen-ballon-2{
+    width: 110px;
+    height: 120px;
+}
+
+.text-overlay-2{
+    position: absolute;
+    top: 35%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #f7e034;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image-arrow {
+    width: 10px;
+    height: 10px;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.play-button{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container-head {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin-left: 150px;
+    height: 130px;
+}
+   
+.container-cups {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    padding-left: 25px;
+}
+
+.container-hourglass {
+    float: right;
+    margin-bottom: 70px;
+    padding-right: 10px;
+}
+
+.container-down {
+    display: flex;
+    flex-direction: row;
+    margin-top: 66px;
+    padding-top: 0px;
+    padding-left: 0px;
+    gap: 0px;
+
+}
+
+#imagen-button{
+    width: 40px;
+    height: 40px;
+    padding-bottom: 30px;
+    margin-left: 280px;
+    cursor: pointer;
+}
+
+#imagen-play{
+    width: 40px;
+    height: 40px; 
+    margin-left: 262px;
+    cursor: pointer;
+}
+
+#imagen-arrow {
+    padding: 10px;
+    width: 40px;
+    height: 25px;
+} 
+
+
+
+#imagen-hourglass {
+    width: 45px;
+    height: 65px;
+}
+
+#imagen-cup-3 {
+    width: 90px;
+    height: 120px;
+}
+
+
+#reset {
+    background-color: #ae0139;
+    border: 3px solid #f7e034;
+    border-radius: 30px;
+    font-family: Irish Grover;
+    font-size: 18px;
+    padding: 5px 20px;
+    color: #f7e034;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-family: Irish Grover;
+    font-size: 80px;
+}
+
+
+.title{
+    color:transparent;
+    background: linear-gradient(hsl(58, 100%, 61%) 46% , hsl(22, 100%, 50%) 70%,hsl(20, 98%, 51%) 100%, hsl(8, 89%, 58%)100%);
+    background-clip: texto;
+    -webkit-background-clip: text;
+    margin: 0;
+    font-size: 80px;
+}
+}
