@@ -167,19 +167,74 @@ ul {
 /* Estilos responsivos para PC */
 
 @media (min-width: 768px) {
+  body {
+    height:1440px;
+    margin: 0;
+    padding: 0;
+  }
+
   nav ul li {
-      display: inline-block;
-      margin: 0 1rem;
-  }
+    display: inline-block;
+    margin: 0 ;
+   
+}
+ header{
+  margin: 0;
+  padding: 0;
+  height: 20%;
+ }
 
-  header, nav, main, footer {
-      padding: 2rem;
-  }
+h1{
+    display: flex;
+   
+    margin: 0;
+    height:100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+   
+}
+.title{
+  font-size: 128px;
+}
 
-  nav ul {
-      list-style: none;
-      padding: 0;
-  }
+.container{
+  display: contents;
+  justify-content: center;
+  
+}
+.container-ballon-1{
+  display: flex;
+   padding: 0;
+   margin-left: 18%;
+   margin-top: 4%;
+   height: 100%;
+  
+   
+}
+
+#image-ballon {
+width: 300px;
+height: 300px;
+  
+}
+.home-text{
+  
+  margin-top: 15%;
+  font-size: 36px ; 
+  
+  left: 50%;
+  
+  
+}
+.red_choose {
+  height: 70px;
+  width: 490px;
+ 
+  font-size: 48px;
+
+}
+
   
   footer {
       background-color: #f05b16;
@@ -187,12 +242,7 @@ ul {
       padding: 0.5rem 0;
   }
   
-  .terms {
-      list-style: none;
-      padding: 2 5;
-      margin: 0;
-      display: flex;
-  }
+ 
 
   .terms li {
       margin: 0 10rem; 
@@ -212,7 +262,7 @@ ul {
   }
 
 .rectangle {
-  height: 100vh;
+  height: 10%;
 }
 
 .element {
