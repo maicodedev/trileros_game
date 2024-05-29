@@ -78,10 +78,21 @@ header {
   border: 3px solid #f7e034;
   border-radius: 30px;
   font-family: Irish Grover;
-
   justify-content: center;
   font-size: 25px;
-  color:rgba(247, 224, 52, 1)
+  color: rgba(247, 224, 52, 1);
+  animation: scale-up-top 5s linear 4s infinite; 
+}
+
+@keyframes scale-up-top {
+  0% {
+    transform: scale(0.5);
+    transform-origin: center top;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center top;
+  }
 }
 
 .lower {
@@ -103,7 +114,44 @@ header {
   justify-content: center;
   margin-top: 2px;
   margin-left: 65px;
+  animation: shake-left-right 0.8s linear both 2s infinite, 
+  move-pause 3s linear 2s infinite; 
 }
+
+@keyframes shake-left-right {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes move-pause {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 .sound-button {
   width: 30px; 
@@ -162,6 +210,34 @@ ul {
   .cups_desktop {
     display: none;
   }
+
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Para que no interfiera con los clics */
+    overflow: hidden;
+    z-index: 9999; /* Asegúrate de que esté por encima de otros elementos */
+  }
+  
+  .star {
+    position: absolute;
+    top: -10px; /* Comienza fuera de la pantalla */
+    width: 5px;
+    height: 5px;
+    background: rgb(59, 248, 248);
+    border-radius: 50%;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(100vh); /* Baja hasta el fondo de la pantalla */
+    }
+  }
+  
 
 
 /* Estilos responsivos para PC */
@@ -224,3 +300,21 @@ circus {
   display: none;
 }
 }
+
+/* Estilos responsivos para móvil pequeño 
+
+@media (min-width: 393px) {
+  nav ul li {
+      display: inline-block;
+      margin: 0 1rem;
+  }
+
+  header, nav, main, footer {
+    padding: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+} */
