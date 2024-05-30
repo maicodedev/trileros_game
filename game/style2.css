@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     width: 20%;
-    margin-left: 45%;
+    margin-left: 40%;
     gap: 10%;
 
 }
@@ -38,13 +38,13 @@ body {
     flex-direction: row;
     gap: 3%;
     padding-top: 8%;
-    padding-left: 32%;
+    padding-left: 25%;
 }
 
 .container-hourglass {
     float: right;
     margin-top: 5%;
-    padding-right: 5px;
+    padding-right: 5%;
 }
 
 .container-down {
@@ -55,25 +55,26 @@ body {
     gap: 10%;
 }
 
-
+.reset-button {
+    padding-top: 2%;
+}
 #imagen-button{
-    width: 55px;
-    height: 55px;
-    padding-bottom: 30px;
-    margin-left: 280px;
+    width: 25%;
+    height: 60%;
+    padding-top: 10%;
+    margin-left: 125%;
     cursor: pointer;
 }
 
 #imagen-play{
-    width: 55px;
-    height: 55px; 
-    margin-left: 262px;
+    width: 20%;
+    height: 95%; 
+    margin-left: 75%;
     cursor: pointer;
 }
 
 #imagen-arrow {
-    padding: 20px;
-    padding-top: 10px;
+    padding-top: 2%;
     width: 100%;
     height: 100%;
 } 
@@ -85,15 +86,15 @@ body {
 }
 
 #imagen-hourglass {
-    width: 60px;
-    height: 80px;
+    width: 30%;
+    height: 40%;
+    margin-left: 50%;
 }
 
 #imagen-cup-3 {
-    width: 150px;
-    height: 200px;
+    width: 80%;
+    height: 80%;
 }
-
 
 #reset {
     background-color: #ae0139;
@@ -129,7 +130,7 @@ body {
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #f7e034;
-    font-size: 20px;
+    font-size: 160%;
     font-weight: bold;
     cursor: pointer;
 }
@@ -157,17 +158,14 @@ body {
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #f7e034;
-    font-size: 20px;
+    font-size: 160%;
     font-weight: bold;
     cursor: pointer;
 }
 
-
 h1 {
     font-family: Irish Grover;
-    font-size: 80px;
 }
-
 
 .title{
     color:transparent;
@@ -175,11 +173,11 @@ h1 {
     background-clip: texto;
     -webkit-background-clip: text;
     margin: 0;
-    font-size: 128px;
+    font-size: 800%;
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
-    html, body {
+    html, body, header, main {
         height: 100%;
         margin: 0;
         padding: 0;
@@ -215,7 +213,7 @@ h1 {
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #f7e034;
-    font-size: 14px;
+    font-size: 80%;
     font-weight: bold;
     cursor: pointer;
 }
@@ -243,7 +241,7 @@ h1 {
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #f7e034;
-    font-size: 14px;
+    font-size: 80%;
     font-weight: bold;
     cursor: pointer;
 }
@@ -263,48 +261,48 @@ h1 {
 .container-head {
     display: flex;
     justify-content: center;
-    width: 500px;
-    margin-left: 150px;
-    height: 130px;
 }
    
 .container-cups {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
-    padding-top: 50px;
-    padding-left: 25px;
+    gap: 3%;
+    padding-top: 3%;
+    padding-left: 35%;
 }
 
 .container-hourglass {
     float: right;
-    margin-bottom: 70px;
-    padding-right: 10px;
+    margin-bottom: 5%;
+    padding-right: 5%;
 }
 
 .container-down {
     display: flex;
     flex-direction: row;
-    margin-top: 66px;
+    margin-top: 8%;
     padding-top: 0px;
-    padding-left: 0px;
-    gap: 0px;
+    padding-left: 3%;
+}
 
+.reset-button {
+    padding-left: 3%;
+    padding-top: 5%;
 }
 
 #imagen-button{
-    width: 40px;
-    height: 40px;
-    padding-bottom: 30px;
-    margin-left: 280px;
+    margin-left: 35%;
+    margin-top: 5%;
+    width: 20%;
+    height: 55%; 
     cursor: pointer;
 }
 
 #imagen-play{
-    width: 40px;
-    height: 40px; 
-    margin-left: 262px;
+    width: 15%;
+    height: 70%;
+    margin-left: 52%;
     cursor: pointer;
 }
 
@@ -317,15 +315,15 @@ h1 {
 
 
 #imagen-hourglass {
-    width: 45px;
-    height: 65px;
+    width: 20%;
+    height: 20%;
+    margin-left: 80%;
 }
 
 #imagen-cup-3 {
     width: 90px;
     height: 120px;
 }
-
 
 #reset {
     background-color: #ae0139;
@@ -338,19 +336,12 @@ h1 {
     cursor: pointer;
 }
 
-
-h1 {
-    font-family: Irish Grover;
-    font-size: 80px;
-}
-
-
 .title{
     color:transparent;
     background: linear-gradient(hsl(58, 100%, 61%) 46% , hsl(22, 100%, 50%) 70%,hsl(20, 98%, 51%) 100%, hsl(8, 89%, 58%)100%);
     background-clip: texto;
     -webkit-background-clip: text;
     margin: 0;
-    font-size: 80px;
+    font-size: 500%;
 }
 }
