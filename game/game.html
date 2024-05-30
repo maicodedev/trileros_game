@@ -60,22 +60,25 @@
             <div class="container-main">
          
                 <div class="container-cups">
-                    <div class="cup-1">
+                    <div class="cup">
                         <img id="imagen-cup-3" src="../assets/images/cup3.png" alt="cup3">
                     </div>
-                    <div class="cup-2">
+                    <div class="cup">
                         <img id="imagen-cup-3"src="../assets/images/cup3.png" alt="cup3">
                     </div>
-                    <div class="cup3">
+                    <div class="cup">
                         <img id="imagen-cup-3" src="../assets/images/cup3.png" alt="cup3">
                     </div>
+                </div>
+                <div id="ball" class="little-ball">
                 </div>
                 <div class="container-down">
                     <div class="reset-button">
                         <button id="reset" type="button">RESET</button>
                     </div>
                     <div class="play-button">
-                        <img id="imagen-play" src="../assets/icons/play.png" alt="imagen-play">
+                        <button id="start-button">
+                        </button>
                     </div>
                     <audio id="miAudio" src="../assets/music/circus.mp3" loop></audio>
                     <div class="sound-button" onclick="toggleSound()">
@@ -85,6 +88,7 @@
             </div>
         </main>
     </div>
+    <script src="gameFunction.js"></script>
     <script src="../game/game.js"></script>
 </body>
 </html>

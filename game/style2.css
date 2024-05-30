@@ -1,5 +1,5 @@
-/*Aqui va todo el desktop, Dimensiones Desktop 1400 x 667 (fuera del media query va todo lo del desktop*/
-html {
+/*Aqui va todo el desktop, Dimensiones Desktop 1461 x 1024 (fuera del media query va todo lo del desktop*/
+html, body, header, main  {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -12,16 +12,28 @@ body {
     height: 100%;
 }
 
+.cup {
+    transition: transform 0.5s;
+}
+
+.little-ball {
+    width: 4%;
+    height: 5%;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px black solid;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
 .image-arrow {
     width: 5%;
     height: 10%;
     padding-top: 2%;
     padding-left: 2%;
-}
-
-.play-button {
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 .container-head {
@@ -41,6 +53,10 @@ body {
     padding-left: 25%;
 }
 
+.cup img {
+    cursor: pointer;
+}
+
 .container-hourglass {
     float: right;
     margin-top: 5%;
@@ -51,15 +67,16 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 5%;
-    padding-left: 7%;
-    gap: 1%;
-
+    justify-content: center;
+    gap: 25%;
 }
 
 .reset-button {
     padding-top: 2%;
 }
-#imagen-button{
+
+
+#imagen-button {
     width: 25%;
     height: 60%;
     padding-top: 10%;
@@ -67,10 +84,16 @@ body {
     cursor: pointer;
 }
 
-#imagen-play{
-    width: 20%;
-    height: 95%; 
-    margin-left: 75%;
+
+#start-button {
+    background-image: url(../assets/icons/play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border-style: hidden;
     cursor: pointer;
 }
 
@@ -224,11 +247,23 @@ h1 {
         padding: 0;
     }
     body {
-    background-image: url(../assets/images/wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 60% ;
-    background-size: 440%;
+        background-image: url(../assets/images/wallpaper.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 60% ;
+        background-size: 440%;
+    }
+
+#ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
 }
 
 /*GLOBO 1*/
@@ -342,11 +377,15 @@ h1 {
     cursor: pointer;
 }
 
-#imagen-play{
-    width: 12%;
-    height: 70%;
-    margin-left: 52%;
-    cursor: pointer;
+#start-button {
+    background-image: url(../assets/icons/play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: hidden;
 }
 
 #imagen-arrow {
@@ -354,8 +393,6 @@ h1 {
     width: 40px;
     height: 25px;
 } 
-
-
 
 #imagen-hourglass {
     width: 20%;
