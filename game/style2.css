@@ -50,9 +50,9 @@ body {
 .container-down {
     display: flex;
     flex-direction: row;
-    padding-top: 5%;
-    padding-left: 7%;
-    gap: 1%;
+    padding-top: 10%;
+    padding-left: 8%;
+    gap: 10%;
 }
 
 .reset-button {
@@ -80,6 +80,11 @@ body {
 } 
 
 
+#imagen-ballon-2 {
+    width: 20%;
+    height: 50%;
+}
+
 #imagen-hourglass {
     width: 30%;
     height: 40%;
@@ -90,7 +95,6 @@ body {
     width: 80%;
     height: 80%;
 }
-
 
 #reset {
     background-color: #ae0139;
@@ -159,11 +163,9 @@ body {
     cursor: pointer;
 }
 
-
 h1 {
     font-family: Irish Grover;
 }
-
 
 .title{
     color:transparent;
@@ -244,7 +246,12 @@ h1 {
     cursor: pointer;
 }
 
-
+.image-arrow {
+    width: 10px;
+    height: 10px;
+    padding-top: 10px;
+    padding-left: 0;
+}
 
 .play-button{
     padding-left: 0px;
@@ -299,6 +306,11 @@ h1 {
     cursor: pointer;
 }
 
+#imagen-arrow {
+    padding: 10px;
+    width: 40px;
+    height: 25px;
+} 
 
 
 
@@ -312,7 +324,6 @@ h1 {
     width: 90px;
     height: 120px;
 }
-
 
 #reset {
     background-color: #ae0139;
