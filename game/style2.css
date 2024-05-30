@@ -1,5 +1,5 @@
 /*Aqui va todo el desktop, Dimensiones Desktop 1400 x 667 (fuera del media query va todo lo del desktop*/
-html, body {
+html {
     height: 100%;
     margin: 0;
     padding: 0;
