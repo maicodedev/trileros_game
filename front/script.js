@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
         star.addEventListener('animationend', () => {
             star.remove();
 
-        // Crea una nueva estrella cada 500 ms en lugar de cada 300 ms
-        setInterval(createStar, 300); // Reducido de 300ms a 500ms
+        // Crea una nueva estrella cada 1700 ms en lugar de cada 300 ms
+        setInterval(createStar, 1700); // Reducido de 300ms a 1700ms
 
         });
     }
 
     // Crea una nueva estrella cada 300 ms
-    setInterval(createStar, 300);
+    setInterval(createStar, 1700);
 });
 
