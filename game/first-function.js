@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     playButton.addEventListener("click", () => {
         if (!gameStarted) {
-            startCountdown(10);
+            startCountdown(3);
             startRotation(); 
             raiseAllCups();
             ballPosition = Math.floor(Math.random() * 3);
