@@ -1,1 +1,1 @@
-import { changeStyles } from "./game.js";
+import { changeStyles } from "./second-function.js";

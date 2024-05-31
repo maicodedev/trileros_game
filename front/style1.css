@@ -24,9 +24,9 @@ main{
 /*HEADER*/
 h1 {
   font-family: Irish Grover;
-  font-size: 55px;
-  height: 100%;  
-  
+  font-size: 60px;
+  /*height: 100%;  */
+  margin-top: 95px;
 }
 
 .title {
@@ -36,7 +36,7 @@ h1 {
     -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  background-size: 100% 100%;  
+  /*background-size: 100% 100%; */ 
   background-repeat: no-repeat; 
   -webkit-text-fill-color: transparent;
   padding: 0;
@@ -45,6 +45,7 @@ h1 {
 
 header, nav, main {
   text-align: center;
+  height: 100%;
 }
 
 

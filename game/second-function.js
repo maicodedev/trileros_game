@@ -7,51 +7,36 @@ document.addEventListener("DOMContentLoaded", function() {
    
 
     btnBallon.addEventListener('click', function(event) {
-        event.preventDefault(); // Previene la acción por defecto del enlace
-        modal.style.display = "flex"; // Muestra el modal
+        event.preventDefault(); 
+        modal.style.display = "flex"; 
     });
 
     closeBtn.addEventListener('click', function() {
-        modal.style.display = "none"; // Oculta el modal
+        modal.style.display = "none"; 
     });
 
     window.addEventListener('click', function(event) {
         if (event.target === modal) {
-            modal.style.display = "none"; // Oculta el modal si se hace clic fuera de él
+            modal.style.display = "none"; 
         }
     });
 
     window.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
-            modal.style.display = "none"; // Oculta el modal al presionar Escape
+            modal.style.display = "none"; 
         }
     });
 });
 
-
-//AUDIO
-var audio = document.getElementById("miAudio");
-
-function toggleSound() {
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
-    }
-}
-
 //GLOBOS
-// Obtener referencias a los contenedores que agrupan cada globo y su texto
+
 const pack1 = document.querySelector('.container-ballon-1');
 const pack2 = document.querySelector('.container-ballon-2');
-
-// Definir la función para mover los globos y los textos como packs
 function moveElements() {
-    // Generar valores aleatorios para el desplazamiento horizontal y vertical
+    
     const offsetX = Math.random() * 20 - 5;
     const offsetY = Math.random() * 20 - 5;
 
-    // Aplicar el desplazamiento a los estilos de los packs
     pack1.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     pack2.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 }
@@ -86,3 +71,25 @@ function updateScore(win) {
 
 winButton.addEventListener('click', () => updateScore(true));
 loseButton.addEventListener('click', () => updateScore(false));*/
+setInterval(moveElements, 1000);
+
+
+//AUDIO
+var audio = document.getElementById("miAudio");
+var isMuted = false;
+
+
+window.onload = function() {
+    audio.play();
+};
+
+function toggleSound() {
+    if (isMuted) {
+        audio.play();
+        isMuted = false;
+    } else {
+        audio.pause();
+        isMuted = true;
+    }
+}
+        

@@ -1,15 +1,53 @@
-/*Aqui va todo el desktop, Dimensiones Desktop 1400 x 667 (fuera del media query va todo lo del desktop*/
+/*Aqui va todo el desktop, Dimensiones Desktop 1461 x 1024 (fuera del media query va todo lo del desktop*/
 html {
-    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+}
+body {
+    background-image: url(../assets/images/taburete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
-body {
-    background-image: url(../assets/images/wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 61% ;
-    background-size: 490%;
-    height: 100%;
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+width: 100%;
+height: 25%;
+margin: 0;
+    padding: 0;
+}
+
+.cup {
+    transition: transform 0.5s;
+}
+
+.little-ball {
+    width: 4%;
+    height: 12%;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px black solid;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
 }
 
 .image-arrow {
@@ -19,58 +57,95 @@ body {
     padding-left: 2%;
 }
 
-.play-button {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 .container-head {
     display: flex;
     justify-content: center;
-    width: 20%;
-    margin-left: 40%;
-    gap: 10%;
-
+    width: 100%; 
+    gap: 5%;
+    padding: 0;
+    margin: 0 auto; 
 }
    
 .container-cups {
     display: flex;
     flex-direction: row;
     gap: 3%;
-    padding-top: 8%;
-    padding-left: 25%;
+    padding-top: 18%; 
+    margin: 0 auto;
+
 }
 
+.cup img {
+    cursor: pointer;
+}
+
+/*RELOJ DE ARENA*/
 .container-hourglass {
-    float: right;
-    margin-top: 5%;
-    padding-right: 5%;
+    position: absolute;
+    right: 0%;
+    top: 20%;
 }
 
+.clock-and-countdown {
+    display: flex;
+}
+
+#imagen-hourglass {
+    width: 25%;
+    height: 45%;
+}
+
+#countdown {
+    font-family: 'Irish Grover', cursive;
+    font-size: 5em;
+    color: #f7e034;
+    text-align: center;
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+@keyframes rotate-hourglass {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#imagen-hourglass.rotating {
+    animation: rotate-hourglass 4s linear infinite;
+}
 .container-down {
     display: flex;
     flex-direction: row;
-    padding-top: 5%;
-    padding-left: 7%;
-    gap: 1%;
-
+    gap: 29%;
+    margin: 0 auto; 
+    width: 100%; 
+    padding-top: 10%;
+    justify-content: space-between;
 }
 
 .reset-button {
     padding-top: 2%;
+    padding-left: 5%;
 }
-#imagen-button{
-    width: 25%;
-    height: 60%;
-    padding-top: 10%;
-    margin-left: 125%;
+
+#imagen-button {
+    width: 30%;
     cursor: pointer;
 }
 
-#imagen-play{
-    width: 20%;
-    height: 95%; 
-    margin-left: 75%;
+#start-button {
+    background-image: url(../assets/icons/play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border-style: hidden;
     cursor: pointer;
 }
 
@@ -80,21 +155,14 @@ body {
     height: 100%;
 } 
 
-
 #imagen-ballon-2 {
     width: 20%;
     height: 50%;
 }
 
-#imagen-hourglass {
-    width: 30%;
-    height: 40%;
-    margin-left: 50%;
-}
-
 #imagen-cup-3 {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 }
 
 #reset {
@@ -102,7 +170,7 @@ body {
     border: 3px solid #f7e034;
     border-radius: 30px;
     font-family: Irish Grover;
-    font-size: 25px;
+    font-size: 35px;
     padding: 5px 20px;
     color: #f7e034;
     cursor: pointer;
@@ -168,41 +236,67 @@ body {
 
 }
 
+/* Estilo para el fondo del modal */
 .modal {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1;
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    justify-content: center;
-    align-items: center;
-}
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-    margin: auto;
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: center; 
+    align-items: center; 
 }
 
+/* Estilo para el contenido del modal */
+.modal-content {
+    height: 540px;
+    width: 940px;
+    background-color: hsla(263, 44%, 44%, 1); 
+    border: 6px solid rgba(247, 224, 52, 1); 
+    border-radius: 50px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    animation: fadeIn 0.5s; 
+    text-align: center; 
+    color: #f7e034; 
+    font-size: 30px; 
+    font-family: Josefin Sans, Arial;
+    position: relative;
+}
+
+/* Estilo para el botón de cierre */
 .close {
-    color: black;
-    float: right;
-    font-size: 28px;
+    color: #d4d113;
+    font-size: 45px;
     font-weight: bold;
-    cursor: pointer;
+    position: absolute; 
+    top: 10px;
+    right: 20px;
 }
 
 .close:hover,
 .close:focus {
-    color: red;
+    color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Estilo para el título y los párrafos */
+.modal-content h2 {
+    margin-top: 0; 
+    text-align: center; 
+}
+
+.modal-content p {
+    margin: 10px 0; 
+    text-align: center; 
 }
 
 h1 {
@@ -219,17 +313,53 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
-    html, body, header, main {
-        height: 100%;
-        margin: 0;
+    html {
+        height: 100vh;
+        margin: 0 auto;
         padding: 0;
+        width: 100%;
     }
     body {
-    background-image: url(../assets/images/wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 60% ;
-    background-size: 440%;
+        background-image: url(../assets/images/taburete.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0%;
+        height: 100vh;
+
+    }
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+width: 100%;
+height: 25%;
+margin: 0;
+    padding: 0;
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
 }
 
 /*GLOBO 1*/
@@ -298,10 +428,6 @@ h1 {
     padding-left: 0;
 }
 
-.play-button{
-    padding-left: 0px;
-    padding-right: 0px;
-}
 
 .container-head {
     display: flex;
@@ -313,22 +439,58 @@ h1 {
     flex-direction: row;
     justify-content: center;
     gap: 3%;
-    padding-top: 7%;
-    padding-left: 35%;
+    padding-top: 35%;
+    padding-left: 3%;
 }
 
+
+/*RELOJ DE ARENA*/
 .container-hourglass {
-    float: right;
-    margin-bottom: 5%;
-    padding-right: 5%;
+    position: absolute;
+    left: 80%; 
+    bottom: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.clock-and-countdown {
+    display: flex;
+}
+
+#imagen-hourglass {
+    width: 35%;
+    height: 45%;
+}
+
+#countdown {
+    font-family: 'Irish Grover', cursive;
+    font-size: 4em;
+    color: #f7e034;
+    text-align: center;
+}
+@keyframes rotate-hourglass {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#imagen-hourglass.rotating {
+    animation: rotate-hourglass 4s linear infinite;
+}
+
 
 .container-down {
     display: flex;
     flex-direction: row;
-    margin-top: 8%;
-    padding-top: 0%;
-    padding-left: 3%;
+    gap: 30%;
+    margin: 0 auto; 
+    width: 95%; 
+    padding-top: 9%;
+    justify-content: space-between;
 }
 
 .reset-button {
@@ -337,17 +499,19 @@ h1 {
 }
 
 #imagen-button{
-    margin-left: 30%;
-    width: 20%;
-    height: 55%; 
+    width:30%;
     cursor: pointer;
 }
 
-#imagen-play{
-    width: 12%;
-    height: 70%;
-    margin-left: 52%;
-    cursor: pointer;
+#start-button {
+    background-image: url(../assets/icons/play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: hidden;
 }
 
 #imagen-arrow {
@@ -357,12 +521,6 @@ h1 {
 } 
 
 
-
-#imagen-hourglass {
-    width: 20%;
-    height: 20%;
-    margin-left: 80%;
-}
 
 #imagen-cup-3 {
     width: 90px;
@@ -389,4 +547,65 @@ h1 {
     margin: 0;
     font-size: 500%;
 }
+/* Estilo para el fondo del modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Estilo para el contenido del modal */
+.modal-content {
+    height: 300px;
+    width: 500px;
+    background-color: hsla(263, 44%, 44%, 1); 
+    border: 6px solid rgba(247, 224, 52, 1); 
+    border-radius: 50px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    animation: fadeIn 0.5s; 
+    text-align: center; 
+    color: #f7e034; 
+    font-size: 15px; 
+    font-family: Josefin Sans, Arial;
+    position: relative;
+}
+
+/* Estilo para el botón de cierre */
+.close {
+    color: #d4d113;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute; 
+    top: 10px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para el título y los párrafos */
+.modal-content h2 {
+    margin-top: 0; 
+    text-align: center; 
+}
+
+.modal-content p {
+    margin: 10px 0; 
+    text-align: center; 
+}
+
 }
