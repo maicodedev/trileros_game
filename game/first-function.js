@@ -80,17 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ball.style.display = "none";
     }
 
-    
     function startRotation() {
         hourglass.classList.add("rotating");
     }
-
     
     function stopRotation() {
         hourglass.classList.remove("rotating");
     }
 
-    
     function startCountdown(duration) {
         let timeRemaining = duration;
         countdownElement.textContent = timeRemaining;
