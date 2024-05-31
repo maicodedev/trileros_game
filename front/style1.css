@@ -14,13 +14,14 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 932px;
+  width: 430px;
 }
 
 main{
   flex: 1;
 }
-
+/*HEADER*/
 h1 {
   font-family: Irish Grover;
   font-size: 60px;
@@ -33,11 +34,13 @@ h1 {
     background: linear-gradient(hsl(58, 100%, 61%) 46% , hsl(22, 100%, 50%) 70%,hsl(20, 98%, 51%) 100%, hsl(8, 89%, 58%)100%);
     background-clip: texto;
     -webkit-background-clip: text;
-  /*-moz-background-clip: text;*/
+  -moz-background-clip: text;
   background-clip: text;
   /*background-size: 100% 100%; */ 
   background-repeat: no-repeat; 
   -webkit-text-fill-color: transparent;
+  padding: 0;
+  margin: 5px;
 }
 
 header, nav, main {
@@ -45,10 +48,8 @@ header, nav, main {
   height: 100%;
 }
 
-header {
-  color: white;
-}
 
+/*MAIN*/
 .allblocks {
   margin-top: -24px;
 }
@@ -76,7 +77,7 @@ header {
 }
 
 .red_choose {
-  height: 40px;
+  height: 37px;
   width: 65%;
   background-color: rgba(174, 1, 57); 
   border: 3px solid #f7e034;
@@ -85,6 +86,7 @@ header {
   justify-content: center;
   font-size: 25px;
   color: rgba(247, 224, 52, 1);
+  margin: 10px;
   animation: scale-up-top 5s linear 4s infinite; 
 }
 
@@ -108,7 +110,7 @@ header {
 
 .red_play {
   height: 65px;
-  width: 60%;
+  width: 55%;
   background-color: rgba(174, 1, 57); 
   border: 3px solid #f7e034;
   border-radius: 30px;
@@ -155,18 +157,17 @@ header {
     transform: translateX(0);
   }
 }
-
-
 .sound-button {
   width: 30px; 
   height: 30px; 
 }
-
 .sound-button img {
   width: 100%;
   height: 100%;
 }
-
+.cups-mobile{
+ margin-top: 2%;
+}
 .circus {
   height: 130px;
   width: 55%;
@@ -174,12 +175,12 @@ header {
   border: 6px solid rgba(247, 224, 52, 1); 
   border-radius: 50px;
   margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   display: flex; 
   align-items: center; 
+  padding: auto;
 }
-
 .image-container {
   display: flex;
   align-items: center;
@@ -187,7 +188,6 @@ header {
   width: 100%;
   height: 100%;
 }
-
 .image-container img {
   max-width: 30%;
   max-height: auto;
@@ -204,8 +204,8 @@ footer {
       font-family: Josefin Sans, Arial;
       text-align: center;
       justify-content: center;
+      height: 60px;
   }
-
 
 ul {
       list-style: none;
@@ -214,6 +214,9 @@ ul {
 
   .cups_desktop {
     display: none;
+  }
+  .terms{
+    font-size: 15px; 
   }
 
   .stars {
@@ -242,21 +245,19 @@ ul {
       transform: translateY(100vh); /* Baja hasta el fondo de la pantalla */
     }
   }
-  
-
 /* Estilos responsivos para PC */
 
 @media (min-width: 768px) {
   body {
-    height:1440px;
+    width:1440px;
+    height: 1024px;
     margin: 0;
-    padding: 0;
+    padding: 0 auto;
+    margin: 10px;
   }
-
   nav ul li {
     display: inline-block;
     margin: 0 ;
-   
 }
  header{
   margin: 0;
@@ -265,65 +266,60 @@ ul {
  }
 
 h1{
-   
    margin: 0;
-   font-size: 140px;
+   font-size: 105px;
     height:100%;
     text-align: center;
     justify-content: center;
-    margin-top: 3%;
-   
+    margin-top: -10px;
+    padding: auto;
 }
-
+ 
+/*margin-top: 95px;*/
 
 
 .container-ballon-1{
   display: flex;
    padding: 0;
-   margin-left: 5%;
-   margin-top: 4%;
+   margin-left: 13%;
+   margin-top: 20px;
    height: 100%;
-  
-   
 }
 
 #image-ballon {
-width: 300px;
-height: 300px;
-  
+width: 250px;
+height: 250px;
 }
 .home-text{
-  
   margin-top: 15%;
-  font-size: 36px ; 
-  
-  left: 50%;
-  
-  
+  font-size: 36px; 
+  left: 50%;  
 }
 .red_choose {
-  height: 70px;
-  width: 490px;
- 
-  font-size: 48px;
-
+  height: 55px;
+  width: 460px;
+  margin:0;
+  font-size: 50px;
+  align-content: center;
+  padding: 0;
+  margin-top: -40px;
 }
 
 .cups-mobile{
-  height: 540px;
-  width: 940px;
+  height: 400px;
+  width: 750px;
   background-color: hsl(263, 44%, 44%,80%); 
-  border: 6px solid rgba(247, 224, 52, 1); 
+  border: 16px solid rgba(247, 224, 52, 80%); 
   border-radius: 50px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 5px ;
+  margin-left: 25%;
+  align-content: center;
   display: flex; 
-  align-items: center; 
+  position: relative;
 }
 .circus {
-  width: 240px;
-  height: 333px;
+  width: 200px;
+  height: 300px;
   background-color: transparent; 
   border: transparent; 
   border-radius: 50px;
@@ -334,7 +330,6 @@ height: 300px;
   align-items: center; 
 }
 .image-container img {
-  
   max-width: 100%;
   max-height: auto;
  gap:20%;
@@ -346,19 +341,14 @@ height: 300px;
   justify-content: center;
   width: 100%;
   height: 100%;
-  
- 
 }
-#circus1{
-  width: 50%;
-}
+
 
 
 .rectangle {
   height: 50%;
   margin-top: -30%;
   justify-content: space-between;
-  
 }
 .rectangle img{
   gap:20%;
@@ -368,26 +358,28 @@ height: 300px;
   flex-direction: row;
   width: 100%;
   gap:10%
-
-  
+}
+.lower{
+  align-items:self-start;
 }
 .red_play {
-  height: 103px;
-  width: 326px;
-  font-size: 90px;
+  height: 70px;
+  width: 250px;
+  font-size: 65px;
   margin-top: 2px;
   margin-left: 40%;
+  align-items: center;
+  -webkit-text-stroke: 2px black;
+  display: 5%;
 }
 .sound-button img {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
 }
-  footer {     
-      padding: 0.5rem 0;
-  }
+ 
   
   .terms li {
-      
+      height: 20%;
       width: 100%;
   }
 
@@ -397,17 +389,14 @@ height: 300px;
 
   .cups_desktop {
     display: inline;
-
   }
+  
 
-circus {
-  display: none;
-}
 footer {
-  height: 50px;
+  height: 35px;
   bottom: 0;
   left: 0;
- 
+  padding: 0;
   font-family: Josefin Sans, Arial;
   text-align:center;
   justify-content:center;

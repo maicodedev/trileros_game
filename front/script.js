@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Iniciar la animación para cada imagen dentro de los botones
-    const img1 = document.querySelector('#button1 .image-container img');
+    const img1 = document.querySelector('.circus .image-container img');
     const img2 = document.querySelector('#button2 .image-container img');
     const img3 = document.querySelector('#button3 .image-container img');
 
@@ -66,4 +66,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Crea una nueva estrella cada 300 ms
     setInterval(createStar, 1700);
 });
-
