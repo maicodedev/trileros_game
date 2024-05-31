@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function raiseAllCups() {
         cups.forEach(cup => {
-            cup.style.transform = "translateY(-60px)";
+            cup.style.transform = "translateY(-70px)";
         });
 
         setTimeout(() => {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function raiseCup(index) {
-        cups[index].style.transform = "translateY(-60px)";
+        cups[index].style.transform = "translateY(-70px)";
     }
 
     function resetGame() {
