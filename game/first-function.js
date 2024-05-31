@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function raiseAllCups() {
         cups.forEach(cup => {
-            cup.style.transform = "translateY(-60px)";
+            cup.style.transform = "translateY(-70px)";
         });
 
         setTimeout(() => {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function raiseCup(index) {
-        cups[index].style.transform = "translateY(-60px)";
+        cups[index].style.transform = "translateY(-70px)";
     }
 
     function resetGame() {
@@ -80,17 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ball.style.display = "none";
     }
 
-    
     function startRotation() {
         hourglass.classList.add("rotating");
     }
-
     
     function stopRotation() {
         hourglass.classList.remove("rotating");
     }
 
-    
     function startCountdown(duration) {
         let timeRemaining = duration;
         countdownElement.textContent = timeRemaining;

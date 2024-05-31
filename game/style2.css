@@ -127,22 +127,15 @@ margin: 0;
     justify-content: space-between;
 }
 
-
-   
-    
-
 .reset-button {
     padding-top: 2%;
     padding-left: 5%;
 }
 
-
 #imagen-button {
     width: 30%;
     cursor: pointer;
 }
-
-
 
 #start-button {
     background-image: url(../assets/icons/play.png);
@@ -162,13 +155,10 @@ margin: 0;
     height: 100%;
 } 
 
-
 #imagen-ballon-2 {
     width: 20%;
     height: 50%;
 }
-
-
 
 #imagen-cup-3 {
     width: 90%;
