@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="container-general">
+   
         <header>
             <div class="image-arrow"> 
             <a href="../front/index.html" id="helpBtn" class="btn-arrow">
@@ -55,8 +55,12 @@
         </header>
         <main>
             <div class="container-hourglass">
-                <img id="imagen-hourglass" src="../assets/icons/hourglass.png" alt="hourglass">
-        </div>
+                <div class="clock-and-countdown">
+                    <div id="countdown">10</div> <!-- Contador primero -->
+                    <img id="imagen-hourglass" src="../assets/icons/hourglass.png" alt="hourglass"> <!-- Reloj después -->
+                </div>
+            </div>
+            
             <div class="container-main">
          
                 <div class="container-cups">
@@ -71,7 +75,9 @@
                     </div>
                 </div>
                 <div id="ball" class="little-ball">
-                </div>
+            </div>
+        </div>
+            </main>
                 <div class="container-down">
                     <div class="reset-button">
                         <button id="reset" type="button">RESET</button>
@@ -86,9 +92,9 @@
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
-    <script src="gameFunction.js"></script>
-    <script src="../game/game.js"></script>
+        
+    
+    <script src="first-function.js"></script>
+    <script src="second-function.js"></script>
 </body>
 </html>
