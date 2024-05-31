@@ -58,3 +58,31 @@ function moveElements() {
 
 // Establecer un intervalo para llamar a la función cada cierto tiempo (en milisegundos)
 setInterval(moveElements, 1000);
+
+/*button score*/
+let score = 0;
+
+const scoreDiv = document.getElementById('score');
+const incrementButton = document.getElementById('imagen-play');
+
+function updateScore() {
+    score += 10;
+    scoreDiv.textContent = `Score: ${score}`;
+}
+
+incrementButton.addEventListener('click', updateScore);
+/*  let score = 0;
+
+const scoreDiv = document.getElementById('score');
+const winButton = document.getElementById('winButton');
+const loseButton = document.getElementById('loseButton');
+
+function updateScore(win) {
+    if (win) {
+        score += 10;
+    }
+    scoreDiv.textContent = `Score: ${score}`;
+}
+
+winButton.addEventListener('click', () => updateScore(true));
+loseButton.addEventListener('click', () => updateScore(false));*/
