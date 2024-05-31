@@ -1,15 +1,36 @@
 /*Aqui va todo el desktop, Dimensiones Desktop 1461 x 1024 (fuera del media query va todo lo del desktop*/
-html, body, header, main  {
-    height: 100%;
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+}
+body {
+    background-image: url(../assets/images/taburete.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
-body {
-    background-image: url(../assets/images/wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 61% ;
-    background-size: 490%;
-    height: 100%;
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+width: 100%;
+height: 25%;
+margin: 0;
+    padding: 0;
 }
 
 .cup {
@@ -39,50 +60,83 @@ body {
 .container-head {
     display: flex;
     justify-content: center;
-    width: 20%;
-    margin-left: 40%;
-    gap: 10%;
-
+    width: 100%; 
+    gap: 5%;
+    padding: 0;
+    margin: 0 auto; 
 }
    
 .container-cups {
     display: flex;
     flex-direction: row;
     gap: 3%;
-    padding-top: 8%;
-    padding-left: 25%;
+    padding-top: 18%; 
+    margin: 0 auto;
+
 }
 
 .cup img {
     cursor: pointer;
 }
 
+/*RELOJ DE ARENA*/
 .container-hourglass {
-    float: right;
-    margin-top: 5%;
-    padding-right: 5%;
+    position: absolute;
+    right: 0%;
+    top: 20%;
 }
 
+.clock-and-countdown {
+    display: flex;
+}
+
+#imagen-hourglass {
+    width: 25%;
+    height: 45%;
+}
+
+#countdown {
+    font-family: 'Irish Grover', cursive;
+    font-size: 5em;
+    color: #f7e034;
+    text-align: center;
+}
+@keyframes rotate-hourglass {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#imagen-hourglass.rotating {
+    animation: rotate-hourglass 4s linear infinite;
+}
 .container-down {
     display: flex;
     flex-direction: row;
-    padding-top: 5%;
-    justify-content: center;
-    gap: 25%;
+    gap: 29%;
+    margin: 0 auto; 
+    width: 100%; 
+    padding-top: 10%;
+    justify-content: space-between;
 }
+
+
+   
+    
 
 .reset-button {
     padding-top: 2%;
+    padding-left: 5%;
 }
 
 
 #imagen-button {
-    width: 25%;
-    height: 60%;
-    padding-top: 10%;
-    margin-left: 125%;
+    width: 30%;
     cursor: pointer;
 }
+
 
 
 #start-button {
@@ -109,15 +163,11 @@ body {
     height: 50%;
 }
 
-#imagen-hourglass {
-    width: 30%;
-    height: 40%;
-    margin-left: 50%;
-}
+
 
 #imagen-cup-3 {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 }
 
 #reset {
@@ -125,7 +175,7 @@ body {
     border: 3px solid #f7e034;
     border-radius: 30px;
     font-family: Irish Grover;
-    font-size: 25px;
+    font-size: 35px;
     padding: 5px 20px;
     color: #f7e034;
     cursor: pointer;
@@ -191,7 +241,7 @@ body {
 }
 
 .modal {
-    display: none; /* Oculto por defecto */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
@@ -199,7 +249,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     justify-content: center;
     align-items: center;
 }
@@ -241,18 +291,42 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
-    html, body, header, main {
-        height: 100%;
-        margin: 0;
+    html {
+        height: 100vh;
+        margin: 0 auto;
         padding: 0;
+        width: 100%;
     }
     body {
-        background-image: url(../assets/images/wallpaper.jpg);
+        background-image: url(../assets/images/taburete.png);
+        background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         background-attachment: fixed;
-        background-position: 50% 60% ;
-        background-size: 440%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0%;
+        height: 100vh;
+
     }
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+width: 100%;
+height: 25%;
+margin: 0;
+    padding: 0;
+}
 
 #ball {
     width: 20px;
@@ -332,10 +406,6 @@ h1 {
     padding-left: 0;
 }
 
-.play-button{
-    padding-left: 0px;
-    padding-right: 0px;
-}
 
 .container-head {
     display: flex;
@@ -347,22 +417,58 @@ h1 {
     flex-direction: row;
     justify-content: center;
     gap: 3%;
-    padding-top: 7%;
-    padding-left: 35%;
+    padding-top: 35%;
+    padding-left: 3%;
 }
 
+
+/*RELOJ DE ARENA*/
 .container-hourglass {
-    float: right;
-    margin-bottom: 5%;
-    padding-right: 5%;
+    position: absolute;
+    left: 80%; 
+    bottom: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.clock-and-countdown {
+    display: flex;
+}
+
+#imagen-hourglass {
+    width: 35%;
+    height: 45%;
+}
+
+#countdown {
+    font-family: 'Irish Grover', cursive;
+    font-size: 4em;
+    color: #f7e034;
+    text-align: center;
+}
+@keyframes rotate-hourglass {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#imagen-hourglass.rotating {
+    animation: rotate-hourglass 4s linear infinite;
+}
+
 
 .container-down {
     display: flex;
     flex-direction: row;
-    margin-top: 8%;
-    padding-top: 0%;
-    padding-left: 3%;
+    gap: 30%;
+    margin: 0 auto; 
+    width: 95%; 
+    padding-top: 9%;
+    justify-content: space-between;
 }
 
 .reset-button {
@@ -371,9 +477,7 @@ h1 {
 }
 
 #imagen-button{
-    margin-left: 30%;
-    width: 20%;
-    height: 55%; 
+    width:30%;
     cursor: pointer;
 }
 
@@ -394,11 +498,7 @@ h1 {
     height: 25px;
 } 
 
-#imagen-hourglass {
-    width: 20%;
-    height: 20%;
-    margin-left: 80%;
-}
+
 
 #imagen-cup-3 {
     width: 90px;
