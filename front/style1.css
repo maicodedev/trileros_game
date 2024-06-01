@@ -14,8 +14,7 @@ body {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  height: 932px;
-  width: 430px;
+  height: 430px;
 }
 
 main{
@@ -24,9 +23,9 @@ main{
 /*HEADER*/
 h1 {
   font-family: Irish Grover;
-  font-size: 60px;
+  font-size: 55px;
   /*height: 100%;  */
-  margin-top: 95px;
+  margin-top: 85px;
 }
 
 .title {
@@ -45,7 +44,11 @@ h1 {
 
 header, nav, main {
   text-align: center;
-  height: 100%;
+ 
+}
+header{
+  margin: 0;
+  padding: 5px;
 }
 
 
@@ -57,12 +60,13 @@ header, nav, main {
 .container-ballon-1 {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: -5px;
 }
 
 #image-ballon {
   width: 100px; 
   position: relative;
+  
 }
 
 .home-text {
@@ -78,13 +82,13 @@ header, nav, main {
 
 .red_choose {
   height: 37px;
-  width: 65%;
+  width: 64%;
   background-color: rgba(174, 1, 57); 
   border: 3px solid #f7e034;
   border-radius: 30px;
   font-family: Irish Grover;
   justify-content: center;
-  font-size: 25px;
+  font-size: 20px;
   color: rgba(247, 224, 52, 1);
   margin: 10px;
   animation: scale-up-top 5s linear 4s infinite; 
@@ -109,8 +113,10 @@ header, nav, main {
 }
 
 .red_play {
-  height: 65px;
-  width: 55%;
+  height: 50px;
+  width: 150px;
+  position: relative;
+  padding: 0;
   background-color: rgba(174, 1, 57); 
   border: 3px solid #f7e034;
   border-radius: 30px;
@@ -118,10 +124,15 @@ header, nav, main {
   font-size: 45px;
   color: rgba(247, 224, 52, 1);
   justify-content: center;
-  margin-top: 2px;
-  margin-left: 65px;
+  margin-left: 50px;
   animation: shake-left-right 0.8s linear both 2s infinite, 
   move-pause 3s linear 2s infinite; 
+  display: flex;
+  text-align: center;
+}
+.red_play:hoverT{
+  width: 50%;
+  color :aqua;
 }
 
 @keyframes shake-left-right {
@@ -161,32 +172,35 @@ header, nav, main {
   width: 30px; 
   height: 30px; 
 }
-.sound-button img {
-  width: 100%;
-  height: 100%;
-}
+
 .cups-mobile{
- margin-top: 2%;
+ margin-top: -3%;
+}
+#imagen-button{
+  height: 30px;
+  width: 30px;
+  position: relative;
 }
 .circus {
-  height: 130px;
+  height: 120px;
   width: 55%;
   background-color: hsl(263, 44%, 44%,80%); 
   border: 6px solid rgba(247, 224, 52, 1); 
-  border-radius: 50px;
+  border-radius: 90px;
   margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex; 
-  align-items: center; 
+  align-content: center;
+  justify-content: center;
   padding: auto;
+  
 }
 .image-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+ 
 }
 .image-container img {
   max-width: 30%;
@@ -197,26 +211,30 @@ header, nav, main {
 footer {
       background-color: #f07035;
       color: white;
-      position: fixed; 
-      bottom: 0;
-      left: 0;
+      position: relative;
+      margin: 2px ;
       width: 100%;
+      height: 75px; 
       font-family: Josefin Sans, Arial;
       text-align: center;
       justify-content: center;
-      height: 60px;
+      margin-top: 35px;
+      padding: 0 ;
+      display: flex;
+      
   }
 
 ul {
       list-style: none;
       padding: 0;
+      margin: 5px;
   }
 
   .cups_desktop {
     display: none;
   }
   .terms{
-    font-size: 15px; 
+    font-size: 11px; 
   }
 
   .stars {
@@ -274,6 +292,9 @@ h1{
     margin-top: -10px;
     padding: auto;
 }
+.title{
+  margin-left: 6%;
+}
  
 /*margin-top: 95px;*/
 
@@ -281,8 +302,8 @@ h1{
 .container-ballon-1{
   display: flex;
    padding: 0;
-   margin-left: 13%;
-   margin-top: 20px;
+   margin-left: 10%;
+   margin-top: 29px;
    height: 100%;
 }
 
@@ -303,6 +324,7 @@ height: 250px;
   align-content: center;
   padding: 0;
   margin-top: -40px;
+  margin-left: 7%;
 }
 
 .cups-mobile{
@@ -312,7 +334,7 @@ height: 250px;
   border: 16px solid rgba(247, 224, 52, 80%); 
   border-radius: 50px;
   margin: 5px ;
-  margin-left: 25%;
+  margin-left: 26%;
   align-content: center;
   display: flex; 
   position: relative;
@@ -372,9 +394,9 @@ height: 250px;
   -webkit-text-stroke: 2px black;
   display: 5%;
 }
-.sound-button img {
-  width: 70px;
-  height: 70px;
+#imagen-button{
+  width: 200%;
+  height: 200%;
 }
  
   
@@ -397,12 +419,24 @@ footer {
   bottom: 0;
   left: 0;
   padding: 0;
-  font-family: Josefin Sans, Arial;
-  text-align:center;
-  justify-content:center;
+  position:fixed;
+  margin: 0;
   flex-direction: column;
   display: flex;
 }
+/* background-color: #f07035;
+      color: white;
+      position: relative;
+      margin: 0;
+      width: 100%;
+      height: 64px; ;
+      font-family: Josefin Sans, Arial;
+      text-align: center;
+      justify-content: center;
+      margin-top: 10px;
+      padding: 0;
+      display: flex;*/
+
 
 ul {
   list-style: none;
