@@ -286,7 +286,7 @@ header {
 
 /* Estilo para el fondo del modal */
 .modal {
-    display: none; 
+    display: flex; 
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -311,8 +311,7 @@ header {
     align-items: center; 
     padding: 20px; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
-    animation: fadeIn 0.5s; 
-    text-align: center; 
+    animation: fadeIn 0.5s;  
     color: #f7e034; 
     font-size: 30px; 
     font-family: Josefin Sans, Arial;

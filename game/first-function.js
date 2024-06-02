@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetButton = document.getElementById("reset");
     const countdownElement = document.getElementById("countdown");
     const hourglass = document.getElementById("imagen-hourglass");
+    const scoreDiv = document.getElementById('score');
+    let score = 0;
     let ballPosition = 0;
     let gameStarted = false;
     let countdownInterval;
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         playButton.disabled = false;
         resetButton.disabled = true;
         ballPosition = 0;
-        countdownElement.textContent = "3";
+        countdownElement.textContent = "5";
     });
 
     cups.forEach((cup, index) => {
@@ -35,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!gameStarted) return; 
             raiseCup(index); 
             if (ballPosition === index) {
-                revealBall(); 
+                revealBall();
+                updateScore(true);
                 setTimeout(() => {
                     alert("Correcto! Encontraste la bolita.");
                 }, 1200);
@@ -71,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
             ball.style.display = "none";
             moveBall(); // Se mueve la bola despues de bajar los vasos y ocultar la bolita
-            startCountdown(3); // Se inicia el contador luego de bajar los vasos
+            startCountdown(5); // Se inicia el contador luego de bajar los vasos
             startRotation();
         }, 1000);
     }
@@ -105,23 +108,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (timeRemaining <= 0) {
                 clearInterval(countdownInterval);
-                stopRotation(); 
+                stopRotation();
+                gameStarted = false;
+                setTimeout(() => {
+                    alert("Se te ha acabado el tiempo, presiona RESET para volver a jugar");
+                }, 300);
             }
         }, 1000);
     }
 
-    function showAlertWin() {
-        let alertWin = getElementById("winner-alert")
-        alertWin.classList.add("show");
-
-        setTimeout(function() {
-            closeAlert();
-        }, 3000);
-
+    function updateScore(win) {
+        if (win) {
+            score += 10;
+        }
+        scoreDiv.textContent = `Score: ${score}`;
     }
-
-    function closeAlert() {
-        let alertWin = getElementById("winner-alert")
-        alertWin.classList.add("show");
-    }    
 });
