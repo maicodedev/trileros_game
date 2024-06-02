@@ -1,17 +1,17 @@
 ###### 🎪 TRILEROS 🎪
 
-Bienvenido de trileros: "Encuentra la Bolita". Este proyecto es un sencillo juego en el que el objetivo es encontrar la bolita escondida debajo de uno de los tres vasos. ¡Diviértete y pon a prueba tu agudeza visual y tus reflejos!
+Bienvenido al juego de trileros: "Encuentra la Bolita". Este proyecto es un sencillo juego en el que el objetivo es encontrar la bolita escondida debajo de uno de los tres vasos. ¡Diviértete y pon a prueba tu agudeza visual y tus reflejos!
 
 #### DESCRIPCIÓN 
 
-Trileros es un juego web. Se presentan tres vasos en la pantalla, y una bolita escondida debajo de uno de ellos. Los vasos se moverán y mezclarán, y el jugador debe adivinar debajo de cuál vaso está la bolita.
+Trileros es un juego web. Se presentan tres vasos en la pantalla, y una bolita escondida debajo de uno de ellos. La bolita se mezclara y el jugador debe adivinar debajo de cuál vaso está la bolita.
 
 #### CARACTERISTÍCAS 
 
 * Interfaz gráfica intuitiva.
-* Animaciones fluidas de los movimientos de los vasos.
+* Customizacion de vasos.
 * Funcionalidad para reiniciar el juego.
-* Contador de intentos y aciertos.
+* Contador de puntos por aciertos.
 * Elaborado con HTML, CSS y JAVASCRIPT.
 
 #### CÓMO JUGAR
