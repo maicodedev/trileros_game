@@ -35,7 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     cups.forEach((cup, index) => {
         cup.addEventListener("click", () => {
             if (!gameStarted) return; 
-            raiseCup(index); 
+            raiseCup(index);
+            stopRotation(); 
+            clearInterval(countdownInterval); 
             if (ballPosition === index) {
                 revealBall();
                 updateScore(true);
