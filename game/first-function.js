@@ -123,7 +123,5 @@ document.addEventListener("DOMContentLoaded", () => {
     function closeAlert() {
         let alertWin = getElementById("winner-alert")
         alertWin.classList.add("show");
-}    
-
-
+    }    
 });
