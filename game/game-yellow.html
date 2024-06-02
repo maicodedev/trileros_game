@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trileros</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="game-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="image-arrow"> 
-            <a href="../front/index.html" id="helpBtn" class="btn-arrow">
+            <a href="index.html" id="helpBtn" class="btn-arrow">
                 <img id="imagen-arrow" src="../assets/icons/arrow.png" alt="arrow">
             </a>
         </div>
@@ -30,41 +30,40 @@
                 <h1 class="title">TRILEROS</h1>
             </div>
             <div class="container-ballon-2">
-                <a href="#" class="btn-ballon">
+                <a href="#" class="btn-ballon" id="btn-ballon-help">
                 <img id="imagen-ballon-2" src="../assets/icons/ballon.png"  alt="Balloon-icon">
                 <span class="text-overlay-2">HELP</span>
                 </a>
             </div>
-            <!-- Contenedor del modal -->
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <h2>Instrucciones del Juego</h2>
-                    <p>1. Al iniciar el juego, verás tres vasos en la pantalla y una bolita que será colocada debajo de uno de los vasos.</p>
-                    <p>2. Observa cómo los vasos se mezclan.</p>
-                    <p>3. Una vez que los vasos se detengan, usa tu ratón para hacer clic en el vaso que crees que oculta la bolita.</p>
-                    <p>4. Si encuentras la bolita, ¡felicidades! Irás acumulando puntos, si no, inténtalo de nuevo.</p>
-                    <p>5. Puedes reiniciar el juego en cualquier momento para volver a intentarlo.</p>
+                    <p>1. Para iniciar el juego presiona el boton de play.</p>
+                    <p>2. Se elevaran los vasos mostrando la bolita en su posicion inicial.</p>
+                    <p>3. Una vez que los vasos vuelvan a su lugar, usa tu ratón para hacer clic en el vaso que crees que oculta la bolita.</p>
+                    <p>4. Tienes 5 segundos para seleccionar un vaso, de no hacerlo habras perdido tu oportunidad y tendras que reiniciar.</p>
+                    <p>5. Puedes reiniciar el juego en cualquier momento para volver a intentarlo presionando el boton de RESET.</p>
                 </div>
             </div>
     </header>
     <main>
         <div class="container-hourglass">
             <div class="clock-and-countdown">
-                <div id="countdown">5</div> 
-                <img id="imagen-hourglass" src="../assets/icons/hourglass.png" alt="hourglass"> 
+                <div id="countdown">5</div> <!-- Contador primero -->
+                <img id="imagen-hourglass" src="../assets/icons/hourglass.png" alt="hourglass"> <!-- Reloj después -->
             </div>
             </div>
             <div class="container-main">
                 <div class="container-cups">
                     <div class="cup">
-                        <img id="imagen-cup-3" src="../assets/images/cup3.png" alt="cup3">
+                        <img id="imagen-cup-3" src="../assets/images/cup1.png" alt="cup3">
                     </div>
                     <div class="cup">
-                        <img id="imagen-cup-3"src="../assets/images/cup3.png" alt="cup3">
+                        <img id="imagen-cup-3"src="../assets/images/cup1.png" alt="cup3">
                     </div>
                     <div class="cup">
-                        <img id="imagen-cup-3" src="../assets/images/cup3.png" alt="cup3">
+                        <img id="imagen-cup-3" src="../assets/images/cup1.png" alt="cup3">
                     </div>
                 </div>
                 <div id="ball" class="little-ball">

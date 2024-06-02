@@ -27,9 +27,9 @@ main {
 }
 
 header {
-width: 100%;
-height: 25%;
-margin: 0;
+    width: 100%;
+    height: 25%;
+    margin: 0;
     padding: 0;
 }
 
@@ -88,7 +88,6 @@ margin: 0;
 
 .clock-and-countdown {
     display: flex;
-    gap: 15px;
 }
 
 #imagen-hourglass {
@@ -106,6 +105,10 @@ margin: 0;
          2px -2px 0 #000,
         -2px  2px 0 #000,
          2px  2px 0 #000;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+    margin-right: 10px;
 }
 @keyframes rotate-hourglass {
     from {
@@ -239,7 +242,7 @@ margin: 0;
 
 /* Estilo para el fondo del modal */
 .modal {
-    display: none; 
+    display: flex; 
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -264,8 +267,7 @@ margin: 0;
     align-items: center; 
     padding: 20px; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
-    animation: fadeIn 0.5s; 
-    text-align: center; 
+    animation: fadeIn 0.5s;  
     color: #f7e034; 
     font-size: 30px; 
     font-family: Josefin Sans, Arial;
@@ -457,7 +459,6 @@ margin: 0;
 
 .clock-and-countdown {
     display: flex;
-    gap:12px;
 }
 
 #imagen-hourglass {
@@ -580,7 +581,6 @@ margin: 0;
     font-size: 15px; 
     font-family: Josefin Sans, Arial;
     position: relative;
-    
 }
 
 /* Estilo para el botón de cierre */

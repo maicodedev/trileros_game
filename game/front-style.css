@@ -107,8 +107,8 @@ header{
 
 .lower {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: right;
+  justify-content: end;
   padding: 0 10%;
 }
 
@@ -335,6 +335,7 @@ height: 250px;
   border-radius: 50px;
   margin: 5px ;
   margin-left: 26%;
+  margin-top: 5%;
   align-content: center;
   display: flex; 
   position: relative;
