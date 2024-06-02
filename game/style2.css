@@ -88,6 +88,7 @@ margin: 0;
 
 .clock-and-countdown {
     display: flex;
+    gap: 15px;
 }
 
 #imagen-hourglass {
@@ -455,6 +456,7 @@ margin: 0;
 
 .clock-and-countdown {
     display: flex;
+    gap:12px;
 }
 
 #imagen-hourglass {
@@ -577,6 +579,7 @@ margin: 0;
     font-size: 15px; 
     font-family: Josefin Sans, Arial;
     position: relative;
+    
 }
 
 /* Estilo para el botón de cierre */
