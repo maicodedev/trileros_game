@@ -16,8 +16,8 @@ Trileros es un juego web. Se presentan tres vasos en la pantalla, y una bolita e
 
 #### CÓMO JUGAR
 
-1. Al iniciar el juego, verás tres vasos en la pantalla y una bolita que será colocada debajo de uno de los vasos.
-2. Observa cómo los vasos se mezclan.
-3. Una vez que los vasos se detengan, usa tu ratón para hacer clic en el vaso que crees que oculta la bolita.
-4. Si encuentras la bolita, ¡felicidades! Irás acumulando puntos, si no, intentalo de nuevo.
-5. Puedes reiniciar el juego en cualquier momento para volver a intentarlo.
+1. Para iniciar el juego presiona el boton de play.
+2. Se elevaran los vasos mostrando la bolita en su posicion inicial.
+3. Una vez que los vasos vuelvan a su lugar, usa tu ratón para hacer clic en el vaso que crees que oculta la bolita.
+4. Tienes 5 segundos para seleccionar un vaso, de no hacerlo habras perdido tu oportunidad y tendras que reiniciar.
+5. Puedes reiniciar el juego en cualquier momento para volver a intentarlo presionando el boton de RESET.
