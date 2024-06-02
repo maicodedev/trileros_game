@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trileros</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="front-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="container-ballon-1">   
                     <img id="image-ballon" src="../assets/icons/ballon.png" alt="Balloon icon">
-                    <span class="home-text">HOME</span> 
+                    <span class="home-text"></span> 
                 </a> 
             </div>
             <h1 class="title">TRILEROS</h1>
@@ -26,25 +26,25 @@
             <button class="red_choose">Choose your cup</button>
         </div>
         <div class="cups-mobile">
-            <button class="circus">
+            <button class="circus" onclick="window.location.href = '../game/game-yellow.html'">
                 <div class="image-container">
                     <img src="../assets/images/cup1.png" alt="Cup1">
                 </div>
             </button>
-            <button class="circus" id="button2">
+            <button class="circus" id="button2" onclick="window.location.href = '../game/game-blue.html'">
                 <div class="image-container">
                     <img src="../assets/images/cup2.png" alt="Cup2">
                 </div>
             </button>
-            <button class="circus" id="button3">
+            <button class="circus" id="button3" onclick="window.location.href = '../game/game-green.html'">
                 <div class="image-container">
                     <img src="../assets/images/cup3.png" alt="Cup3">
                 </div>
             </button>
         </div>
         <div class="lower">
-            <button class="red_play" onclick="window.location.href = 'game.html'">NEXT</button>
-            <div class="sound-button">
+            <audio id="miAudio" src="../assets/music/inki-minki-tinki.mp3" loop></audio>
+            <div class="sound-button" onclick="toggleSound()">
                 <img id="imagen-button" src="../assets/icons/sound.png" alt="sound-button">
             </div>
         </div>
@@ -54,10 +54,11 @@
         <ul class="terms">
             <li>Legal terms and cookies</li>
             <li>Contact</li>
-            <li>&copy; Copyright</li>
+            <li>&copy;Copyright</li>
         </ul>
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="second-function.js"></script>
 </body>
 </html>
