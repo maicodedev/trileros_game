@@ -35,7 +35,6 @@
                 <span class="text-overlay-2">HELP</span>
                 </a>
             </div>
-            <!-- Contenedor del modal -->
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
@@ -51,13 +50,21 @@
     <main>
         <div class="container-hourglass">
             <div class="clock-and-countdown">
-                <div id="countdown">3</div> <!-- Contador primero -->
+                <div id="countdown">5</div> <!-- Contador primero -->
                 <img id="imagen-hourglass" src="../assets/icons/hourglass.png" alt="hourglass"> <!-- Reloj después -->
             </div>
             </div>
             <div class="container-main">
                 <div class="container-cups">
                     <div class="cup">
+                        <div id="winner-alert" class="win-a">
+                            <span class="close-alert">&times;</span>
+                            <strong>Correcto! Encontraste la bolita.</strong>
+                        </div>
+                    <!-- <div id="lost-alet" class="lost-a">
+                            <span class="close-alert-two" onclick="">&times;</span>
+                            <strong>Incorrecto, Intenta de nuevo.</strong>
+                        </div> -->
                         <img id="imagen-cup-3" src="../assets/images/cup3.png" alt="cup3">
                     </div>
                     <div class="cup">

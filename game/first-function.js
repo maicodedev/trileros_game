@@ -11,11 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let countdownInterval;
 
     playButton.addEventListener("click", () => {
-        if (!gameStarted) {
-            startCountdown(3);
-            startRotation(); 
+        if (!gameStarted) { 
             raiseAllCups();
-            ballPosition = Math.floor(Math.random() * 3);
             gameStarted = true;
             playButton.disabled = true;
             resetButton.disabled = false;
@@ -30,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         playButton.disabled = false;
         resetButton.disabled = true;
         ballPosition = 0;
-        countdownElement.textContent = "";
+        countdownElement.textContent = "3";
     });
 
     cups.forEach((cup, index) => {
@@ -38,11 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!gameStarted) return; 
             raiseCup(index); 
             if (ballPosition === index) {
-                movCups(); 
+                revealBall(); 
                 setTimeout(() => {
                     alert("Correcto! Encontraste la bolita.");
                 }, 1200);
             } else {
+                raiseCup(ballPosition); // Si ha elegido mal se levanta el vaso correcto y se muestra la bola
+                revealBall();
                 setTimeout(() => {
                     alert("Incorrecto, Intenta de nuevo.");
                 }, 1200);
@@ -50,7 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    function movCups() {
+    function moveBall() { // Funcion que cambia de posicion la bola para que sea mas descriptivo
+        ballPosition = Math.floor(Math.random() * 3);
+    }
+
+    function revealBall() { // Cambiado nombre de la funcion para que sea mas descriptivo con lo que hace
         ball.style.display = "block";
         ball.style.top = cups[ballPosition].offsetTop + cups[ballPosition].offsetHeight - (ball.offsetHeight*2) + "px";
         ball.style.left = cups[ballPosition].offsetLeft + (cups[ballPosition].offsetWidth / 2) - (ball.offsetWidth / 2) + "px";
@@ -60,12 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
         cups.forEach(cup => {
             cup.style.transform = "translateY(-70px)";
         });
+        revealBall(); // Para mostrar la bola al levantar todos los vasos cuando se inicia el juego
 
         setTimeout(() => {
             cups.forEach(cup => {
                 cup.style.transform = "translateY(0)";
             });
             ball.style.display = "none";
+            moveBall(); // Se mueve la bola despues de bajar los vasos y ocultar la bolita
+            startCountdown(3); // Se inicia el contador luego de bajar los vasos
+            startRotation();
         }, 1000);
     }
 
@@ -102,4 +109,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }, 1000);
     }
+
+    function showAlertWin() {
+        let alertWin = getElementById("winner-alert")
+        alertWin.classList.add("show");
+
+        setTimeout(function() {
+            closeAlert();
+        }, 3000);
+
+    }
+
+    function closeAlert() {
+        let alertWin = getElementById("winner-alert")
+        alertWin.classList.add("show");
+}    
+
+
 });

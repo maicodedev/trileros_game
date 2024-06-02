@@ -27,9 +27,9 @@ main {
 }
 
 header {
-width: 100%;
-height: 25%;
-margin: 0;
+    width: 100%;
+    height: 25%;
+    margin: 0;
     padding: 0;
 }
 
@@ -89,6 +89,50 @@ margin: 0;
 .clock-and-countdown {
     display: flex;
 }
+/* Alertas */
+#winner-alert {
+    display: none;
+}
+
+
+.win-a.show {
+    display: block; /* Mostrar la alerta */
+    opacity: 1; /* Hacerla opaca */
+    transform: translateX(-50%) translateY(-20px); /* Moverla hacia arriba */
+}
+
+.win-a {
+    position: fixed;
+    height: 200px;
+    width: 300px;
+    transform: translateX(-50%);
+    background-color: hsla(263, 44%, 44%, 1); 
+    border: 6px solid rgba(247, 224, 52, 1); 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    animation: fadeIn 0.5s; 
+    text-align: center; 
+    color: #f7e034; 
+    font-size: 30px; 
+    font-family: Josefin Sans, Arial;
+    position: relative;
+}
+
+.close-alert {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 
 #imagen-hourglass {
     width: 25%;
@@ -105,6 +149,10 @@ margin: 0;
          2px -2px 0 #000,
         -2px  2px 0 #000,
          2px  2px 0 #000;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+    margin-right: 10px;
 }
 @keyframes rotate-hourglass {
     from {
